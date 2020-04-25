@@ -1,8 +1,15 @@
 h1, footer {
     background-color: #3399ff;
     color: #ffffff;
-    padding: 5px;
+    padding:1rem;
     margin: 2rem, auto;
     border-radius: 10px;
     text-align: center;
+}
+h2 {
+    text-align: left;
+}
+#container {
+    display: inline-block;
+    width: 700px;
 }
