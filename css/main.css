@@ -2,14 +2,20 @@ h1, footer {
     background-color: #3399ff;
     color: #ffffff;
     padding:1rem;
-    margin: 2rem, auto;
+    margin: 1.5rem, auto;
     border-radius: 10px;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h2 {
+h2, h1, nav {
     text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #container {
     display: inline-block;
     width: 700px;
 }
+body {
+    text-align: center;
+}
+
