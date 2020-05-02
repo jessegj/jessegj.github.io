@@ -6,8 +6,7 @@ h1, h2, h3{
 }
 
 section {
-    max-width: 500px;
-    text-align: justify;
+    text-align: jcenter;
     margin: 30px 10px;
     border: solid 1px black;
     background-color: aliceblue;
