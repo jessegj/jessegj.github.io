@@ -1,25 +1,30 @@
-/*main design for all pages and homepage*/
+/*main design for all page headers and homepage*/
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: lightslategray;
 }
 header, footer {
-    background-color: lightcoral;
     display: flex;
+    flex-flow: column;
+    background-color: lightslategray;
+}
+nav {
+    background-color: lightcoral;
 }
 nav ul li a {
     display: block;
     color: black;
-    text-align: center;
-    font-size: 1rem;
+    font-size: 1.75rem;
     padding: .5rem;
     text-decoration: none;
+    float: left;
 
 }
 nav ul {
    display: block;
    list-style-type: none;
-   justify-content: 1 1 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
 
 }
 nav a:hover {
