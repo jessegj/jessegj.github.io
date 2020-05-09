@@ -6,6 +6,11 @@ header, footer {
     display: flex;
     flex-flow: column;
     background-color: lightslategray;
+    text-align: center;
+}
+footer a {
+    color: black;
+    text-decoration: none;
 }
 nav {
     background-color: lightcoral;
