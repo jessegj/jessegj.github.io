@@ -6,7 +6,7 @@ header, footer {
     display: flex;
     flex-flow: column;
     background-color: lightslategray;
-    text-align: center;
+    text-align: justify;
 }
 footer a {
     color: black;
@@ -35,4 +35,17 @@ nav ul {
 nav a:hover {
     background: lightpink;
     color: black;
+}
+/*design for the color scheme*/
+#prim {
+    background-color: lightslategray;
+}
+#sec {
+    background-color:lightcoral;
+}
+#acct {
+    background-color: lightpink;
+}
+#scheme {
+    text-align: left;
 }
