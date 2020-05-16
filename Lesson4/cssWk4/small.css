@@ -6,6 +6,9 @@ header, footer {
     flex-flow: column;
     background-color: lightslategray;
     text-align: center;
+h2 {
+    text-align: center;
+}
 }
 footer a {
     color: black;
