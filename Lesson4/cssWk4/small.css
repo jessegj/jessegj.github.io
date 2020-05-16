@@ -15,6 +15,7 @@ nav {
     margin: 0 auto;
     max-width: 760px;
     background-color: lightcoral;
+    padding: 0
 }
 nav button {
     margin: .2rem 2%;
