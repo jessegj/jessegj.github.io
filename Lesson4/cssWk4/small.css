@@ -29,6 +29,9 @@ nav ul li a.menu a {
 nav ul li a:hover {
     background-color: lightpink;
 }
+nav ul.hide {
+    display: none;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

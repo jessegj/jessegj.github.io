@@ -2,6 +2,9 @@
 nav button {
         display: none;
     }
+nav ul.hide {
+    display: none;
+}
 nav ul {
     margin-left: 2%;
 }
