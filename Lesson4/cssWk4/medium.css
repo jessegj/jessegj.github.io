@@ -3,7 +3,7 @@ nav button {
         display: none;
     }
 nav ul.hide {
-    display: none;
+    display: block;
 }
 nav ul {
     margin-left: 2%;
