@@ -13,6 +13,7 @@ h2 {
 footer a {
     color: black;
     text-decoration: none;
+    padding: 10px;
 }
 nav {
     margin: 0 auto;
@@ -49,12 +50,18 @@ nav ul li a:hover {
 nav ul.hide {
     display: none;
 }
-
+main {
+    width: %;
+    margin: 0 auto;
+    padding: 10px;
+}
 .hero {
     position: relative;
     margin: 10 px auto;
     width: 100%;
     overflow: hidden;
+    background-color:#6B8E23;
+    border: 1px solid #556b2f;
 }
 .hero picture img {
     width: 100%;
@@ -64,12 +71,18 @@ nav ul.hide {
     position: absolute;
     top: 50px;
     left: 50px;
-    background-color: #6b8e23;
+    background-color: lightpink;
+    border: 3px solid #556b2f;
     padding: 15px;
     opacity: .85;
     font-size: 1rem;
+}
+.map {
+    background-color:#6B8E23;
     border: 1px solid #556b2f;
-    box-shadow: slategrey;
+}
+.contactInfo {
+    text-align: justify;
 }
 .contentbox {
     display: block;
