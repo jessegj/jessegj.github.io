@@ -51,7 +51,7 @@ nav ul.hide {
     display: none;
 }
 main {
-    width: %;
+    width: 0 auto;
     margin: 0 auto;
     padding: 10px;
 }
