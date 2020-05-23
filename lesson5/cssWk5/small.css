@@ -64,8 +64,12 @@ nav ul.hide {
     position: absolute;
     top: 50px;
     left: 50px;
-    background-color: whitesmoke;
-    padding: 10px;
+    background-color: #6b8e23;
+    padding: 15px;
+    opacity: .85;
+    font-size: 1rem;
+    border: 1px solid #556b2f;
+    box-shadow: slategrey;
 }
 .contentbox {
     display: block;
