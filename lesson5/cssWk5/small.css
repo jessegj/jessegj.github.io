@@ -49,6 +49,24 @@ nav ul li a:hover {
 nav ul.hide {
     display: none;
 }
+
+.hero {
+    position: relative;
+    margin: 10 px auto;
+    width: 100%;
+    overflow: hidden;
+}
+.hero picture img {
+    width: 100%;
+    padding: 2rem;
+}
+.weatherSummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: whitesmoke;
+    padding: 10px;
+}
 .contentbox {
     display: block;
     margin: 10pt auto;
