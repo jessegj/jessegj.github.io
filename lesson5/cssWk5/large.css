@@ -5,7 +5,6 @@
     }
     .contactInfo {
         float: right;
-        text-align: center;
-        padding: 2em;
+        padding: 4em;
     }
 }
