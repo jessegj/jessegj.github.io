@@ -17,9 +17,19 @@ nav ul li a {
         padding: .8rem 1rem;
     }
 }
+table {
+    text-align: center;
+}
+table tr th {
+    border: 1px solid;
+}
+table tr td {
+    border: 1px solid;
+}
 .forecast {
     display: flex;
     flex-flow: column;
     text-align: center;
     border: 1px solid;
+    max-width: 600px;
 } 

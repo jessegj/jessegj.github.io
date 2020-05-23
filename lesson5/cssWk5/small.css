@@ -1,5 +1,6 @@
 body {
-    font-family: 'Quicksand', sans-serif;;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F5F5DC;
 }
 header, footer {
     display: flex;
@@ -51,6 +52,7 @@ nav ul.hide {
 }
 main {
     margin: 0 auto;
+    max-width: 1000px;
     padding: 10px;
 }
 .hero {
@@ -80,18 +82,16 @@ main {
     border: 1px solid #556b2f;
 }
 .contactInfo {
-    text-align: justify;
+    text-align: center;
 }
 .forecast {
     display: none;
 }
-.contentbox {
-    display: block;
-    margin: 10pt auto;
-    border: 1px solid;
-    padding: 15px;
-    color: slategray;
+.article img {
+float: left;
+padding: 20px;
 }
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
