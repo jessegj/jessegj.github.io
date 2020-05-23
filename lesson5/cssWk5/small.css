@@ -17,7 +17,6 @@ footer a {
 }
 nav {
     margin: 0 auto;
-    max-width: 760px;
     background-color: lightcoral;
     padding: 0
 }
@@ -51,7 +50,6 @@ nav ul.hide {
     display: none;
 }
 main {
-    width: 0 auto;
     margin: 0 auto;
     padding: 10px;
 }
