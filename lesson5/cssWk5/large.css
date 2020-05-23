@@ -3,4 +3,9 @@
     nav ul li a {
         padding: .6rem 1rem;
     }
+    .contactInfo {
+        float: right;
+        text-align: center;
+        padding: 2em;
+    }
 }

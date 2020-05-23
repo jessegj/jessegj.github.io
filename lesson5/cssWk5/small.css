@@ -83,6 +83,8 @@ main {
 }
 .contactInfo {
     text-align: center;
+    padding: 1em;
+    margin: 0 auto;
 }
 .forecast {
     display: none;
