@@ -82,6 +82,9 @@ main {
 .contactInfo {
     text-align: justify;
 }
+.forecast {
+    display: none;
+}
 .contentbox {
     display: block;
     margin: 10pt auto;
