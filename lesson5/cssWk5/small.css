@@ -96,6 +96,8 @@ main {
 }
 .forecast {
     display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 .article img {
 float: left;
