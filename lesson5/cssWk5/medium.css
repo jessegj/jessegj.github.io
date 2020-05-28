@@ -33,3 +33,6 @@ table tr td {
     border: 1px solid;
     max-width: 600px;
 } 
+.prestonMap {
+    display: block;
+}

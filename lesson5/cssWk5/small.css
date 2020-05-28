@@ -88,6 +88,10 @@ main {
 .map {
     background-color:#6B8E23;
     border: 1px solid #556b2f;
+    
+}
+.prestonMap {
+    display: none;
 }
 .contactInfo {
     text-align: center;
