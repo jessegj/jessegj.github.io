@@ -7,6 +7,7 @@
         <link rel="favicon" href="favicon.ico">
         <link rel="stylesheet" href="cssWk5/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <script src="js/windChill.js"></script>
         <link rel="stylesheet" href="cssWk6/small.css">
         <link rel="stylesheet" href="cssWk6/medium.css">
         <link rel="stylesheet" href="cssWk6/large.css">
@@ -27,16 +28,20 @@
         <main>
             <h2>Preston Idaho</h2>
             <div class="hero">
-                <picture>
-                    <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Shire Bridge">
+                <picture class="prestonField">
+                    <!--<source media="(max-width: 400px)" srcset="images/wwd230_image200.jpg">
+                    <source media="(max-width: 1000px)" srcset="images/wwd230_image500.jpg">
+                    <source media="(max-width: 1600px)" srcset="images/wwd230_image800.jpg">-->        
+                    <img src="images/wdd230_image_franklinOriginal.jpeg" alt="preston field">
                 </picture>
                 <section class="weatherSummary">
                     <h3>Weather Summary</h3>
                     <p>Currently: Sunny</p>
-                    <p>High: 68 °F</p>
+                    <p id="temp">High: 68 °F</p>
+                    <p id="chill">Wind Chill: </p>
                     <p>Precipitation: 0</p>
                     <p>Humidity: 67%</p>
-                    <p>Wind Speed: 8 MPH</p>
+                    <p id="wind">Wind Speed: 8 MPH</p>
                 </section>
             </div>
             <div class="forecast">
@@ -82,4 +87,6 @@
         <br> Last Updated: <span id="lastTime"></span>
         </footer>
         <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontload.js"></script>
     </body>
