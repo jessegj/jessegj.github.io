@@ -65,16 +65,14 @@ main {
 }
 .hero {
     position: relative;
-    margin: 10 px auto;
     width: 100%;
     overflow: hidden;
     background-color:#6B8E23;
     border: 1px solid #556b2f;
 }
 
-.hero picture img {
+picture .sources{
     width: 100%;
-    padding: 2rem;
 }
 .weatherSummary {
     position: absolute;
