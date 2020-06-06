@@ -9,7 +9,8 @@ function preloadImage(img) {
     img.src = src;
 }
 
-const imgOptions ={};
+const imgOptions ={
+};
 
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
     entries.forEach(entry => {
