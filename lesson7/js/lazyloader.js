@@ -1,4 +1,4 @@
-const images = documentSelectorAll("[data-src");
+const images = documentSelectorAll("img[data-src");
 
 function preloadImage(img) {
     const src = img.getAttribute("data-src");

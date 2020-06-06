@@ -1,0 +1,10 @@
+.images {
+    display: grid;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+}
+img[data-src] {
+    filter: blur(0.3em);
+}
