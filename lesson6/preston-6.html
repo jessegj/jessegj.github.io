@@ -1,93 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Examples of design principles">
-        <link rel="favicon" href="favicon.ico">
-        <link rel="stylesheet" href="cssWk6/normalize.css">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-        <!--<script src="js/windChill.js"></script>-->
-        <link rel="stylesheet" href="cssWk6/small.css">
-        <link rel="stylesheet" href="cssWk6/medium.css">
-        <link rel="stylesheet" href="cssWk6/large.css">
-        <title>Preston Homepage</title>
-    </head>
-    <body onload="windChill()">
-        <header><h1><img src="images/Weather Logo-1.png" alt="sunny cloud">highfrontweather.com</h1></header>
-        <nav class="clearfix">
-            <button onclick="toggleMenu()">&#9776;</button>
-           <ul id="primaryNav" class="hide">
-               <li><a href="">Menu</a></li>
-               <li><a class="menu" href="">Home</a></li>
-               <li><a href="">Preston</a></li>
-               <li><a href="">Forecast Center</a></li>
-               <li><a href="">Contact</a></li>
-           </ul> 
-        </nav>
-        <main>
-            <h2>Preston Idaho</h2>
-            <div class="hero">
-                <picture>
-                    <source class="sources" media="(max-width: 400px)" srcset="images/wdd230_image200.jpeg">
-                    <source class="sources" media="(max-width: 1000px)" srcset="images/wdd230_image500.jpeg">
-                    <source class="sources" media="(max-width: 1600px)" srcset="images/wdd230_image800.jpeg">        
-                    <img class="sources" src="images/wdd230_image_franklinOriginal.jpeg" alt="preston field">
-                </picture>
-                <section class="weatherSummary">
-                    <h3>Weather Summary</h3>
-                    <p>Currently: Sunny</p>
-                    <p>High: <span id="temp">45</span>°F</p>
-                    <p>Wind Chill: <span id="chill"></span>°F</p>
-                    <p>Precipitation: 0</p>
-                    <p>Humidity: 67%</p>
-                    <p>Wind Speed: <span id="wind">8</span>MPH</p>
-                </section>
-            </div>
-            <div class="forecast">
-                <table>
-                    <tr>
-                        <th>Sat</th>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tues</th>
-                        <th>Wed</th>
-                    </tr>
-                    <tr>
-                        <td><img src="images/rainy.png" alt="rainy" width="64" height="64">51°F</td>
-                        <td><img src="images/partly-cloudy.png" alt="partly cloudy" width="64" height="64">62°F</td>
-                        <td><img src="images/partly-cloudy.png" alt="partly cloudy" width="64" height="64">70°F</td>
-                        <td><img src="images/sunny.png" alt="sunny" width="64" height="64">77°F</td>
-                        <td><img src="images/sunny.png" alt="sunny" width="64" height="64">83°F</td>
-                    </tr>    
-                </table>
-            </div>
-            <div class="article">
-                <img src="images/greenField.png" alt="Green Field">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate.</p>
 
-                <p>Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
-                    
-                <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            </div>
-            <div class="map">
-                <section class="contactInfo">
-                    <h2>High Front Weather</h2>
-                    <p>134 North State St</p>
-                    <p>Phone: 208-456-7890</p>
-                    <p>Email: info@highfrontweather.com</p>
-                </section>
-                <section class="prestonMap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1480.1928144921224!2d-111.87715506950104!3d42.09921119594363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7ec388469bf%3A0x931a0d1dcc0001fe!2s134%20N%20State%20St%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590212653358!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
-                </section>
-            </div>
-        </main><br>
-        <footer>
-            &copy 2020| Jesse Jensen | Utah | <a href="../assignmentPortal/index.html">Assignment Portal</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Examples of design principles">
+    <link rel="favicon" href="favicon.ico">
+    <link rel="stylesheet" href="cssWk6/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <!--<script src="js/windChill.js"></script>-->
+    <link rel="stylesheet" href="cssWk6/small.css">
+    <link rel="stylesheet" href="cssWk6/medium.css">
+    <link rel="stylesheet" href="cssWk6/large.css">
+    <title>Preston Homepage</title>
+</head>
+
+<body onload="windChill()">
+    <header>
+        <h1><img src="images/Weather Logo-1.png" alt="sunny cloud">highfrontweather.com</h1>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="">Menu</a></li>
+            <li><a class="menu" href="">Home</a></li>
+            <li><a href="">Preston</a></li>
+            <li><a href="">Forecast Center</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="hero">
+            <picture>
+                <source class="sources" media="(max-width: 400px)" srcset="images/wdd230_image200.jpeg">
+                <source class="sources" media="(max-width: 1000px)" srcset="images/wdd230_image500.jpeg">
+                <source class="sources" media="(max-width: 1600px)" srcset="images/wdd230_image800.jpeg">
+                <img class="sources" src="images/wdd230_image_franklinOriginal.jpeg" alt="preston field">
+            </picture>
+            <section class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: <span id="temp">45</span>°F</p>
+                <p>Wind Chill: <span id="chill"></span>°F</p>
+                <p>Precipitation: 0</p>
+                <p>Humidity: 67%</p>
+                <p>Wind Speed: <span id="wind">8</span>MPH</p>
+            </section>
+        </div>
+        <div class="forecast">
+            <table>
+                <tr>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tues</th>
+                    <th>Wed</th>
+                </tr>
+                <tr>
+                    <td><img src="images/rainy.png" alt="rainy" width="64" height="64">51°F</td>
+                    <td><img src="images/partly-cloudy.png" alt="partly cloudy" width="64" height="64">62°F</td>
+                    <td><img src="images/partly-cloudy.png" alt="partly cloudy" width="64" height="64">70°F</td>
+                    <td><img src="images/sunny.png" alt="sunny" width="64" height="64">77°F</td>
+                    <td><img src="images/sunny.png" alt="sunny" width="64" height="64">83°F</td>
+                </tr>
+            </table>
+        </div>
+        <div class="article">
+            <img src="images/greenField.png" alt="Green Field">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate.</p>
+
+            <p>Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur
+                vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam
+                nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
+
+            <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique elit
+                dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus.</p>
+        </div>
+        <div class="map">
+            <section class="contactInfo">
+                <h2>High Front Weather</h2>
+                <p>134 North State St</p>
+                <p>Phone: 208-456-7890</p>
+                <p>Email: info@highfrontweather.com</p>
+            </section>
+            <section class="prestonMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1480.1928144921224!2d-111.87715506950104!3d42.09921119594363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7ec388469bf%3A0x931a0d1dcc0001fe!2s134%20N%20State%20St%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590212653358!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>
+        </div>
+    </main><br>
+    <footer>
+        &copy 2020| Jesse Jensen | Utah | <a href="../assignmentPortal/index.html">Assignment Portal</a>
         <br> Last Updated: <span id="lastTime"></span>
-        </footer>
-        <script src="js/windChill.js"></script>
-        <script src="js/main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="js/webfontload.js"></script>
-    </body>
+    </footer>
+    <script src="js/windChill.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
