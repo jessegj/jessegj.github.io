@@ -19,6 +19,11 @@ if('instersectionObserver' in window) {
             }
         });
     }, imgOptions);
+
+    //load image if necessary
+    imagesToLoad.forEach((img) => {
+        imgObserver.observe(img);
+    });
 }
 //load img not supported
 else {
