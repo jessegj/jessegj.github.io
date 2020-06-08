@@ -3,9 +3,20 @@
     nav ul li a {
         padding: .6rem 1rem;
     }
-    .contactInfo {
-        float: right;
-        padding: 4em;
+/*progressive images css*/
+.images {
+   grid-template-columns: repeat(3, 1fr);
+}
+.images:hover {
+    box-shadow: 0 0 50px black;
+}
+img {
+    border: 1px solid #333;
+    padding: 2px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+img[data-src] {
+    filter: blur(0.2em);
     }
-    
 }
