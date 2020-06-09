@@ -58,61 +58,15 @@ nav ul li a:hover {
 nav ul.hide {
     display: none;
 }
-main {
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 10px;
-}
-.hero {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-color:#6B8E23;
-    border: 1px solid #556b2f;
-}
-
-picture .sources{
-    width: 100%;
-}
-.weatherSummary {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: lightpink;
-    border: 3px solid #556b2f;
-    padding: 15px;
-    opacity: .85;
-    font-size: 1rem;
-}
-.map {
-    background-color:#6B8E23;
-    border: 1px solid #556b2f;
-    
-}
-.prestonMap {
-    display: none;
-}
-.contactInfo {
+h1 {
     text-align: center;
-    padding: 1em;
-    margin: 0 auto;
-}
-.forecast {
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-}
-.article img {
-float: left;
-padding: 1em;
 }
 /*progressive images css*/
 .images {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-auto-columns: auto;
+    justify-content: center;
+    max-width: 1000px;
 }
 img {
     border: 1px solid #333;

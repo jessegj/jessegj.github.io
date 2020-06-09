@@ -1,4 +1,7 @@
 @media only screen and (min-width: 32.5rem) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 nav button {
         display: none;
     }
@@ -16,21 +19,4 @@ nav ul li a {
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .8rem 1rem;
     }
-}
-/*progressive images css*/
-.images {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-img {
-    border: 1px solid #333;
-    padding: 2px;
-    filter: blur(0em);
-    transition: filter 0.5s;
-}
-img[data-src] {
-    filter: blur(0.2em);
 }
