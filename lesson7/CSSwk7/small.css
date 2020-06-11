@@ -67,6 +67,7 @@ h1 {
     grid-template-columns: 1fr;
     justify-content: center;
     max-width: 1000px;
+    margin: auto;
 }
 img {
     border: 1px solid #333;
@@ -76,6 +77,12 @@ img {
 }
 img[data-src] {
     filter: blur(0.2em);
+}
+figure:hover {
+    box-shadow: 0 0 2rem black;
+}
+figcaption {
+    display: none;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
