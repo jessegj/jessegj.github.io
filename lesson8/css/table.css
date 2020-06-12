@@ -8,8 +8,24 @@ thead, tfoot {
 }
 th, td {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+th {
+    font-weight: bolder;;
 }
 tbody th {
     background-color: #628ca6;
     color: #ffffff
+}
+.november {
+    background-color: #628ca6;
+}
+b:first-child {
+    color: white;
+}
+tr {
+    background-color: #e7f0ed;
+}
+tr:nth-child(odd) {
+    background-color: #e7ffed;
 }
