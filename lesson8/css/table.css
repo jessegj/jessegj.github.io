@@ -1,0 +1,15 @@
+table {
+    width: 350px;
+    margin: 100px;
+}
+thead, tfoot {
+    background-color: #7fb9c2;
+    color: #000000
+}
+th, td {
+    font-family: 'Ubuntu', sans-serif;
+}
+tbody th {
+    background-color: #628ca6;
+    color: #ffffff
+}
