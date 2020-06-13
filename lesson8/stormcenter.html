@@ -53,7 +53,7 @@
                         <option value="Tornado"></option>
                     </datalist>
                 </label>
-                <label class="top">Storm Severity (1 - 10) <input type="range" id="rate" value="5" min="1" max="10" step="1" list="points"></label>
+                <label>Storm Severity (1 - 10) <input type="range" id="rate" value="5" min="1" max="10" step="1" list="points"></label>
                     <datalist id="points">
                         <option value="1"></option>
                         <option value="2"></option>
@@ -69,7 +69,7 @@
 
                     <label class="top">Storm Region
                         <select name="region">
-                            <option>Select Region</option>
+                            <option>Select Region &#9662</option>
                             <option>Preston</option>
                             <option>Soda Springs</option>
                             <option>Fish Haven</option>
@@ -80,9 +80,9 @@
                 <fieldset>
                     <legend>Additonal Information</legend>
                     <h3>Are You in Danger?</h3>
-                    <label class="top"><input type="radio" name="danger" value="yes">Yes</label>
-                    <label class="top"><input type="radio" name="danger" value="no">No</label>
-                    <label class="top"><input type="radio" name="danger" value="maybe">Maybe</label>
+                    <label class="radio"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="radio"><input type="radio" name="danger" value="no">No</label>
+                    <label class="radio"><input type="radio" name="danger" value="maybe">Maybe</label>
                     <h3>Additional Information or Comments</h3>
                     <textarea type="comments" id="comments" cols="40" rows="6"></textarea>
                 </fieldset>

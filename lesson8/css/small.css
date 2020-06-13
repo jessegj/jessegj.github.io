@@ -88,9 +88,28 @@ form label.top {
     font-size: .8rem;
 }
 form label.top input, form label.top select {
+    -webkit-appearance: none;
     display: block;
     font-size: 16px;
     border: 1px solid black;
     border-radius: 10px;
     padding: .75rem;
+    width: 85%;
+    background-color: lightgray;
+}
+form input.submitBtn {
+    border: none;
+    background-color: olivedrab;
+    color: white;
+    border-radius: 1rem;
+    padding: .75 rem 1.5 rem;
+    margin: 0 0 2rem 2%;
+    width: 85%;
+    font-size: 44px;
+}
+form label.top input:required {
+    border-left: tomato solid 6px;
+}
+form label.top input:required:valid {
+    border-left: olivedrab solid 6px;
 }

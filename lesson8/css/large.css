@@ -7,5 +7,15 @@
         float: right;
         padding: 4em;
     }
+    form label.top input, form label.top select {
+        max-width: 20rem;
+    }
+    form input.submitBtn {
+        max-width: 20rem;
+    }
+    form label.radio {
+        padding: .4rem;
+        
+    }
     
 }
