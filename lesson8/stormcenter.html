@@ -30,17 +30,49 @@
 
     <main>
         <h2>Report Severe Weather</h2>
-            <form>
+            <form method="get" action="thanks.html">
                 <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Phone<input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label>Email*<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label>ZipCode*<input type="number" name="zipcode" required></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Storm Details</legend>
+                    <label>Storm Date<input type="date" name="stormdate"></label>
+                    <label>Type of Storm<input list="stormtype">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label>Storm Severity (1 - 10) <input type="range" id="rate" value="5" min="1" max="10" step="1" list="points"></label>
+                    <datalist id="points">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
 
                 </fieldset>
                 <fieldset>
-
-                </fieldset>
-                <fieldset>
+                    <legend>Additonal Information</legend>
                     
                 </fieldset>
             </form>
         </main>
 
 </body>
+</html>
