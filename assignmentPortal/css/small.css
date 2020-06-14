@@ -1,6 +1,6 @@
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #F5F5DC;
+    
 }
 body header h1 img {
     padding: 10px;
@@ -23,60 +23,7 @@ footer a {
     text-decoration: none;
     padding: 10px;
 }
-nav {
-    margin: 0 auto;
-    max-width: 1000px;
-    background-color: lightcoral;
-    padding: 0
-}
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 
-nav ul li a {
-    display: block;
-    padding: .8rem 2%;
-    text-decoration: none;
-    color: black;
-    border-top: 1px solid rgba(0,0,0,0.3);
-}
-nav ul li a.menu {
-    background-color: lightcoral;
-}
-
-nav ul li a:hover {
-    background-color: lightpink;
-}
-nav ul.hide {
-    display: none;
-}
-h1 {
-    text-align: center;
-}
-/*progressive images css*/
-.images {
-    display: grid;
-    grid-auto-columns: auto;
-    justify-content: center;
-    max-width: 1000px;
-}
-img {
-    border: 1px solid #333;
-    padding: 2px;
-    filter: blur(0em);
-    transition: filter 0.5s;
-}
-img[data-src] {
-    filter: blur(0.2em);
-}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
