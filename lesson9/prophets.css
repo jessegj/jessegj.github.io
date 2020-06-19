@@ -13,3 +13,16 @@ header {
     margin: 15px auto;
     grid-gap: 4px;
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: goldenrod;
+    border: 10px solid navy;
+}
+
+h2,
+p {
+    text-align: center;
+}
