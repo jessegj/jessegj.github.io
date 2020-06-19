@@ -1,4 +1,15 @@
 header {
     text-align: center;
     font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cards {
+    display: grid;
+    grid-auto-columns: auto;
+    justify-self: center;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 1000px;
+    margin: 15px auto;
+    grid-gap: 4px;
 }
