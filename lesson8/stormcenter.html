@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/large.css">
     <title>Gallery</title>
 </head>
+
 <body>
     <header>
         <h1><img src="images/Weather Logo-1.png" alt="sunny cloud">highfrontweather.com</h1>
@@ -30,19 +31,19 @@
 
     <main>
         <h2>Report Severe Weather</h2>
-            <form method="get" action="thanks.html">
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z].{5,}" required placeholder="Please enter your full name"></label>
-                    <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-                    <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-                    <label class="top">ZipCode*<input type="number" name="zipcode" required placeholder="00000"></label>
-                </fieldset>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z].{5,}" required placeholder="Please enter your full name"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">ZipCode*<input type="number" name="zipcode" required placeholder="00000"></label>
+            </fieldset>
 
-                <fieldset>
-                    <legend>Storm Details</legend>
-                    <label class="top">Storm Date<input type="date" name="stormdate"></label>
-                    <label class="top">Type of Storm<input list="stormtype">
+            <fieldset>
+                <legend>Storm Details</legend>
+                <label class="top">Storm Date<input type="date" name="stormdate"></label>
+                <label class="top">Type of Storm<input list="stormtype">
                     <label class="top">Type of Storm<input list="stormtype">
                     <datalist id="stormtype">
                         <option value="Flash Flood"></option>
@@ -52,8 +53,8 @@
                         <option value="Tornado"></option>
                     </datalist>
                 </label>
-                <label>Storm Severity (1 - 10) <input type="range" id="rate" value="5" min="1" max="10" step="1" list="points"></label>
-                    <datalist class="points">
+                <label class='top'>Storm Severity (1 - 10) <input type="range" id="rate" value="5" min="1" max="10" step="1" list="points"></label>
+                <datalist id='points'>
                         <option value="1"></option>
                         <option value="2"></option>
                         <option value="3"></option>
@@ -66,7 +67,7 @@
                         <option value="10"></option>
                     </datalist>
 
-                    <label class="top">Storm Region
+                <label class="top">Storm Region
                         <select name="region">
                             <option>Select Region &#9662</option>
                             <option>Preston</option>
@@ -75,19 +76,20 @@
                         </select>
                     </label>
 
-                </fieldset>
-                <fieldset>
-                    <legend>Additonal Information</legend>
-                    <h3>Are You in Danger?</h3>
-                    <label class="radio"><input type="radio" name="danger" value="yes">Yes</label>
-                    <label class="radio"><input type="radio" name="danger" value="no">No</label>
-                    <label class="radio"><input type="radio" name="danger" value="maybe">Maybe</label>
-                    <h3>Additional Information or Comments</h3>
-                    <textarea type="comments" id="comments" cols="40" rows="6"></textarea>
-                </fieldset>
-                <input type="submit" value="Report a Storm" class="submitBtn">
-            </form>
-        </main>
+            </fieldset>
+            <fieldset>
+                <legend>Additonal Information</legend>
+                <h3>Are You in Danger?</h3>
+                <label class="radio"><input type="radio" name="danger" value="yes">Yes</label><br>
+                <label class="radio"><input type="radio" name="danger" value="no">No</label><br>
+                <label class="radio"><input type="radio" name="danger" value="maybe">Maybe</label>
+                <h3>Additional Information or Comments</h3>
+                <textarea type="comments" id="comments" cols="40" rows="6"></textarea>
+            </fieldset>
+            <input type="submit" value="Report a Storm" class="submitBtn">
+        </form>
+    </main>
 
 </body>
+
 </html>
