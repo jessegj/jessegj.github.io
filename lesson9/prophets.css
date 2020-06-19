@@ -26,3 +26,19 @@ h2,
 p {
     text-align: center;
 }
+
+p {
+    margin: .5rem;
+    line-height: 0px;
+}
+
+img {
+    max-width: 400px;
+    align-self: center;
+    border-radius: 7px;
+    margin: 3rem;
+}
+
+footer {
+    text-align: center;
+}
