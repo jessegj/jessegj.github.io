@@ -10,27 +10,37 @@ fetch(requestURL)
 
         for (let i = 0; i < towns.length; i++) {
 
+            let towns = towns[i]
+            let townNames = ["Fish Haven", "Preston", "Soda Springs"]
+            if (townNames.includes(town.name)) {
 
+                let section = document.createElement('section');
+                let h2 = document.createElement('h2');
+                let motto = document.createElement('h3');
+                let year = document.createElement('p');
+                let pop = document.createElement('p');
+                let rain = document.createElement('p');
+                let alt = document.createElement('alt');
 
-            let card = document.createElement('section');
-            let h2 = document.createElement('h2');
-            let bDay = document.createElement('p');
-            let bPlace = document.createElement('p');
-            let image = document.createElement('img');
-            let alt = document.createElement('alt');
+                h2.textContent = town.name;
+                motto.textContent = 'Motto: ' + town.motto;
+                year.textContent = 'Year Founded: ' + town.year;
+                pop.textContent = 'Population: ' + town.pop;
+                rain.textContent = 'Annual Rainfall: ' + town.rain;
 
-            alt.setAttribute('alt', );
-            image.setAttribute('src', prophets[i].imageurl);
-            h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-            bDay.textContent = 'Date of Birth: ' + prophets[i].birthdate;
-            bPlace.textContent = 'Place of Birth: ' + prophets[i].birthplace;
+                card.appendChild(h2);
+                card.appendChild(alt);
+                card.appendChild(motto);
+                card.appendChild(year);
+                town.appendChild(pop);
+                town.appendChild(rain);
 
-            card.appendChild(h2);
-            card.appendChild(alt);
-            card.appendChild(bDay);
-            card.appendChild(bPlace);
-            card.appendChild(image);
-            document.querySelector('div.cards').appendChild(card);
+                alt.setAttribute('alt', town.name);
+                let image = createElement('img');
+                img.setAttribute('src', "images/" + town.photo);
+
+                document.querySelector('div.town').appendChild(card);
+            }
         }
 
     });
