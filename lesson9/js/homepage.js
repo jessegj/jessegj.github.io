@@ -10,7 +10,7 @@ fetch(requestURL)
 
         for (let i = 0; i < towns.length; i++) {
 
-            let towns = towns[i]
+            let town = towns[i]
             let townNames = ["Fish Haven", "Preston", "Soda Springs"]
             if (townNames.includes(town.name)) {
 
@@ -28,10 +28,10 @@ fetch(requestURL)
                 pop.textContent = 'Population: ' + town.pop;
                 rain.textContent = 'Annual Rainfall: ' + town.rain;
 
-                card.appendChild(h2);
-                card.appendChild(alt);
-                card.appendChild(motto);
-                card.appendChild(year);
+                town.appendChild(h2);
+                town.appendChild(alt);
+                town.appendChild(motto);
+                town.appendChild(year);
                 town.appendChild(pop);
                 town.appendChild(rain);
 
@@ -39,7 +39,7 @@ fetch(requestURL)
                 let image = createElement('img');
                 img.setAttribute('src', "images/" + town.photo);
 
-                document.querySelector('div.town').appendChild(card);
+                document.querySelector('div.town').appendChild(town);
             }
         }
 
