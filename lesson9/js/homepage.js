@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 fetch(requestURL)
     .then(function(response) {
@@ -10,7 +10,7 @@ fetch(requestURL)
 
         for (let i = 0; i < towns.length; i++) {
 
-            let town = towns[i]
+            let towns = town[i]
             let townNames = ["Fish Haven", "Preston", "Soda Springs"]
             if (townNames.includes(town.name)) {
 
