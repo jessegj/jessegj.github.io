@@ -10,9 +10,9 @@ fetch(requestURL)
 
         for (let i = 0; i < towns.length; i++) {
 
-            let towns = town[i]
-            let townNames = ["Fish Haven", "Preston", "Soda Springs"]
-            if (townNames.includes(town.name)) {
+            let towns = town[i];
+            let townNames = ["Fish Haven", "Preston", "Soda Springs"];
+            if (townNames.includes(towns.name)) {
 
                 let section = document.createElement('section');
                 let h2 = document.createElement('h2');
@@ -22,24 +22,24 @@ fetch(requestURL)
                 let rain = document.createElement('p');
                 let alt = document.createElement('alt');
 
-                h2.textContent = town.name;
-                motto.textContent = 'Motto: ' + town.motto;
-                year.textContent = 'Year Founded: ' + town.year;
-                pop.textContent = 'Population: ' + town.pop;
-                rain.textContent = 'Annual Rainfall: ' + town.rain;
+                h2.textContent = towns.name;
+                motto.textContent = 'Motto: ' + towns.motto;
+                year.textContent = 'Year Founded: ' + towns.year;
+                pop.textContent = 'Population: ' + towns.pop;
+                rain.textContent = 'Annual Rainfall: ' + towns.rain;
 
-                town.appendChild(h2);
-                town.appendChild(alt);
-                town.appendChild(motto);
-                town.appendChild(year);
-                town.appendChild(pop);
-                town.appendChild(rain);
+                towns.appendChild(h2);
+                towns.appendChild(alt);
+                towns.appendChild(motto);
+                towns.appendChild(year);
+                towns.appendChild(pop);
+                towns.appendChild(rain);
 
-                alt.setAttribute('alt', town.name);
+                alt.setAttribute('alt', towns.name);
                 let image = createElement('img');
-                img.setAttribute('src', "images/" + town.photo);
+                img.setAttribute('src', "images/" + towns.photo);
 
-                document.querySelector('div.town').appendChild(town);
+                document.querySelector('div.town').appendChild(towns);
             }
         }
 
