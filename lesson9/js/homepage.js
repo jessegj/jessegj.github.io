@@ -6,13 +6,14 @@ fetch(requestURL)
     })
     .then(function(jsonObject) {
         console.table(jsonObject); // temporary checking for valid response and data parsing
-        const prophets = jsonObject['towns'];
+        const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++) {
 
             let towns = town[i];
             let townNames = ["Fish Haven", "Preston", "Soda Springs"];
-            if (townNames.includes(towns.name)) {
+            /*if (townNames.includes(towns.name))*/
+            {
 
                 let section = document.createElement('section');
                 let h2 = document.createElement('h2');
@@ -28,18 +29,18 @@ fetch(requestURL)
                 pop.textContent = 'Population: ' + towns.pop;
                 rain.textContent = 'Annual Rainfall: ' + towns.rain;
 
-                towns.appendChild(h2);
-                towns.appendChild(alt);
-                towns.appendChild(motto);
-                towns.appendChild(year);
-                towns.appendChild(pop);
-                towns.appendChild(rain);
+                section.appendChild(h2);
+                section.appendChild(alt);
+                section.appendChild(motto);
+                section.appendChild(year);
+                section.appendChild(pop);
+                section.appendChild(rain);
 
-                alt.setAttribute('alt', towns.name);
                 let image = createElement('img');
-                img.setAttribute('src', "images/" + towns.photo);
+                image.setAttribute('alt', towns.name);
+                image.setAttribute('src', "images/" + towns.photo);
 
-                document.querySelector('div.town').appendChild(towns);
+                document.querySelector('div.town').appendChild(section);
             }
         }
 
