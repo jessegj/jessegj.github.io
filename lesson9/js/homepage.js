@@ -10,7 +10,7 @@ fetch(requestURL)
 
         for (let i = 0; i < towns.length; i++) {
 
-            let towns = town[i];
+            let towns = towns[i];
             let townNames = ["Fish Haven", "Preston", "Soda Springs"];
             /*if (townNames.includes(towns.name))*/
             {
@@ -25,9 +25,9 @@ fetch(requestURL)
 
                 h2.textContent = towns.name;
                 motto.textContent = 'Motto: ' + towns.motto;
-                year.textContent = 'Year Founded: ' + towns.year;
-                pop.textContent = 'Population: ' + towns.pop;
-                rain.textContent = 'Annual Rainfall: ' + towns.rain;
+                year.textContent = 'Year Founded: ' + towns.yearFounded;
+                pop.textContent = 'Population: ' + towns.currentPopulation;
+                rain.textContent = 'Annual Rainfall: ' + towns.averageRainfall;
 
                 section.appendChild(h2);
                 section.appendChild(alt);
