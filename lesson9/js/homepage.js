@@ -12,10 +12,12 @@ fetch(requestURL)
 
             let towns = towns[i];
             let townNames = ["Fish Haven", "Preston", "Soda Springs"];
-            /*if (townNames.includes(towns.name))*/
-            {
+            if (townNames.includes(towns.name)) {
 
                 let section = document.createElement('section');
+                section.classList.add('town');
+
+
                 let h2 = document.createElement('h2');
                 let motto = document.createElement('h3');
                 let year = document.createElement('p');
@@ -40,7 +42,7 @@ fetch(requestURL)
                 image.setAttribute('alt', towns.name);
                 image.setAttribute('src', "images/" + towns.photo);
 
-                document.querySelector('div.town').appendChild(section);
+                document.getElementById('town').appendChild(section);
             }
         }
 
