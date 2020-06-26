@@ -12,13 +12,11 @@ fetch(requestURL)
 
             let towns = towns[i];
             let townNames = ["Fish Haven", "Preston", "Soda Springs"];
-            if (townNames.includes(towns.name)) {
-
-                let section = document.createElement('section');
-                section.classList.add('town');
+            /*if (townNames.includes(towns.name))*/
+            {
 
 
-                let h2 = document.createElement('h2');
+                let name = document.createElement('h2');
                 let motto = document.createElement('h3');
                 let year = document.createElement('p');
                 let pop = document.createElement('p');
@@ -31,7 +29,7 @@ fetch(requestURL)
                 pop.textContent = 'Population: ' + towns.currentPopulation;
                 rain.textContent = 'Annual Rainfall: ' + towns.averageRainfall;
 
-                section.appendChild(h2);
+                section.appendChild(name);
                 section.appendChild(alt);
                 section.appendChild(motto);
                 section.appendChild(year);
@@ -42,7 +40,7 @@ fetch(requestURL)
                 image.setAttribute('alt', towns.name);
                 image.setAttribute('src', "images/" + towns.photo);
 
-                document.getElementById('town').appendChild(section);
+                document.querySelector('div.town').appendChild(section);
             }
         }
 
