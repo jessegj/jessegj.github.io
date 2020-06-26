@@ -10,11 +10,10 @@ fetch(requestURL)
 
         for (let i = 0; i < towns.length; i++) {
 
-            let towns = towns[i];
-            let townNames = ["Fish Haven", "Preston", "Soda Springs"];
-            /*if (townNames.includes(towns.name))*/
+            let towns = towns["Fish Haven", "Preston", "Soda Springs"];
+            /*let townNames = ["Fish Haven", "Preston", "Soda Springs"];
+            if (townNames.includes(towns.name))*/
             {
-
 
                 let name = document.createElement('h2');
                 let motto = document.createElement('h3');
