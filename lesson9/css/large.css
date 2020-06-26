@@ -4,7 +4,7 @@
     nav ul li a {
         padding: .6rem 1rem;
     }
-    .city {
-        display: block;
+    .city section {
+        grid-template-columns: repeat(3, fr);
     }
 }
