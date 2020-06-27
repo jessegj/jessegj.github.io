@@ -21,7 +21,7 @@
         grid-template-columns: 1fr 1fr;
     }
     section p {
-        margin: 0;
+        margin: auto;
     }
     section img {
         margin: 25px;
