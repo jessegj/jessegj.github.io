@@ -88,6 +88,7 @@ main {
 main {
     border: 3px solid olivedrab;
     max-width: 1000px;
+    border-radius: 4%;
 }
 
 div.city section {
@@ -98,23 +99,22 @@ div.city section {
 }
 
 section h2 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     margin: 3px;
 }
 
 section h3 {
-    font-size: 1.25rem;
-    margin: 1rem;
+    font-size: 1rem;
     text-align: center;
+    margin: 10px;
 }
 
 section p {
     font-size: 1rem;
-    margin: 1rem;
+    margin: 10px;
 }
 
 section img {
     max-width: 90%;
-    margin-left: 17px;
-    margin-bottom: 17px;
+    margin: 17px;
 }
