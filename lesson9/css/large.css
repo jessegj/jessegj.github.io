@@ -4,9 +4,8 @@
     nav ul li a {
         padding: .6rem 1rem;
     }
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, fr);
+    main div.city {
+        grid-template-columns: 1fr 1fr 1fr;
         border: 3px solid olivedrab;
     }
 }
