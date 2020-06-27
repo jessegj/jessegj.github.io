@@ -35,6 +35,7 @@ fetch(requestURL)
             section.appendChild(year);
             section.appendChild(pop);
             section.appendChild(rain);
+            //section.appendChild(image);
 
             let image = document.createElement('img');
             image.setAttribute('alt', towns.name);
