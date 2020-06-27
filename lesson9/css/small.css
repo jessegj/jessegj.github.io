@@ -117,3 +117,8 @@ section img {
     border-radius: 5px;
     box-shadow: 0 0 10px lightslategray;
 }
+
+article img {
+    float: left;
+    padding: 15px;
+}
