@@ -21,25 +21,32 @@ fetch(requestURL)
             let year = document.createElement('p');
             let pop = document.createElement('p');
             let rain = document.createElement('p');
-            //let alt = document.createElement('alt');
+            let image = document.createElement('img');
+            let alt = document.createElement('alt');
 
+            alt.setAttribute('alt', towns.name);
+            image.setAttribute('src', `images/${towns.photo}`);
             name.textContent = towns.name;
+            //let image = document.createElement('img');
+            image.setAttribute('alt', towns.name);
+            image.setAttribute('src', "images/" + towns.photo);
             motto.textContent = 'Motto: ' + towns.motto;
             year.textContent = 'Year Founded: ' + towns.yearFounded;
             pop.textContent = 'Population: ' + towns.currentPopulation;
             rain.textContent = 'Annual Rainfall: ' + towns.averageRainfall;
 
             section.appendChild(name);
-            //section.appendChild(alt);
             section.appendChild(motto);
             section.appendChild(year);
             section.appendChild(pop);
             section.appendChild(rain);
+            section.appendChild(image);
+            section.appendChild(alt);
 
 
-            let image = document.createElement('img');
-            image.setAttribute('alt', towns.name);
-            image.setAttribute('src', "images/" + towns.image);
+            //let image = document.createElement('img');
+            //image.setAttribute('alt', towns.name);
+            //image.setAttribute('src', "images/" + towns.photo);
 
             document.querySelector('div.city').appendChild(section);
             //}
