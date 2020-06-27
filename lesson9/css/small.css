@@ -1,4 +1,4 @@
-    /*Basic CSS header for weather page*/
+/*Basic CSS header for weather page*/
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -90,24 +90,31 @@ main {
     max-width: 1000px;
 }
 
-main div.city section {
+div.city section {
+    display: block;
     grid-template-columns: 1fr;
     border: 3px solid olive;
-    /*margin: 1rem;*/
+    margin: 0 auto;
 }
 
-main section h2 {
+section h2 {
     font-size: 2.25rem;
-    /*margin: 3px;/*
+    margin: 3px;
 }
 
-main section h3 {
+section h3 {
     font-size: 1.25rem;
-    /*margin: 1rem;*/
+    margin: 1rem;
     text-align: center;
 }
 
-main section p {
+section p {
     font-size: 1rem;
-    /*margin: 1rem;
+    margin: 1rem;
+}
+
+section img {
+    max-width: 90%;
+    margin-left: 17px;
+    margin-bottom: 17px;
 }
