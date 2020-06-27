@@ -39,7 +39,7 @@ fetch(requestURL)
 
             let image = document.createElement('img');
             image.setAttribute('alt', towns.name);
-            image.setAttribute('src', "images/" + towns.photo);
+            image.setAttribute('src', "images/" + towns.image);
 
             document.querySelector('div.city').appendChild(section);
             //}
