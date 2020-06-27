@@ -5,6 +5,7 @@
         padding: .6rem 1rem;
     }
     main {
+        display: grid;
         grid-template-columns: repeat(3, fr);
         border: 3px solid olivedrab;
     }
