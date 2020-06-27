@@ -23,9 +23,6 @@
     section p {
         margin: auto;
     }
-    section img {
-        margin: 25px;
-    }
     section:nth-child(odd) img {
         grid-column: 2;
         grid-row: 3/4;
