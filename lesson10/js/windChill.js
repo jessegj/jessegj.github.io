@@ -44,11 +44,11 @@ fetch(apiURLI)
         });
 
         for (let index = 0; index < fiveDayForecast.length; index++) {
-            const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-            const desc = jsObject.weather[0].descritpion;
+            const imagesrc = 'https://openweathermap.org/img/w/' + fiveDayForecast[index].weather[0].icon + 'png';
+            const desc = fiveDayForecast[index].weather[0].descritpion;
             document.getElementById(`icon${index+1}`).setAttribute('src', imagesrc);
             document.getElementById(`icon${index+1}`).setAttribute('alt', desc);
-            document.getElementById(`day${index+1}`).innerHTML = `${Math.round(fiveDayForecast[index]).main.temp}`;
+            document.getElementById(`day${index+1}`).innerHTML = `${Math.round(fiveDayForecast[index].main.temp)}`;
         }
 
     });
