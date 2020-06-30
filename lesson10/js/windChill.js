@@ -25,6 +25,33 @@ fetch(apiURL)
 
     });
 
+//forecast API
+const apiURLI = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=ec1da9735ed79464d9674d9bfcb53a59&units=imperial';
+
+fetch(apiURLI)
+    .then((response) => response.json())
+    .then((jsObject) => {
+
+        const fiveDayForecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+
+        const weekdays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat'];
+        let day = 0;
+        let imagesrc = "";
+        let desc = "";
+        fiveDayForecast.forEach(forecast => {
+            let d = new Date(forecast.dt_txt);
+            document.getElementById(`dayoftheweek${day+1}`).textContent = forecast.main.temp.toFixed(0);
+            document.getElementById(`forecast${day+1}`).textContent = weekdays[d.getDay()];
+            imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+            desc = jsObject.weather[0].descritpion;
+            document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
+            document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+            day++
+
+        });
+
+    });
+
 function windChill() {
     let temp = (parseFloat(document.getElementById('temp').innerHTML));
     let wind = (parseFloat(document.getElementById('wind').innerHTML));
