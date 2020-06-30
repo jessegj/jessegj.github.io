@@ -40,14 +40,13 @@ fetch(apiURLI)
         let desc = "";
         fiveDayForecast.forEach(forecast => {
             let d = new Date(forecast.dt_txt);
-            document.getElementById(`dayoftheweek${day+1}`).textContent = forecast.main.temp.toFixed(0);
-            document.getElementById(`forecast${day+1}`).textContent = weekdays[d.getDay()];
+            //document.getElementById(`forecast${day+1}`).textContent = forecast.main.temp.toFixed(0);
+            document.getElementById(`weekday${day+1}`).textContent = weekdays[d.getDay()];
+            day++;
             imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
             desc = jsObject.weather[0].descritpion;
             document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
             document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
-            day++
-
         });
 
     });
