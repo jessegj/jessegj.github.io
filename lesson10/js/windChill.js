@@ -43,6 +43,8 @@ fetch(apiURLI)
             day++;
         });
 
+        //This for loop was used with permission from Lance Rob
+
         for (let index = 0; index < fiveDayForecast.length; index++) {
             const imagesrc = 'https://openweathermap.org/img/w/' + fiveDayForecast[index].weather[0].icon + '.png';
             const desc = fiveDayForecast[index].weather[0].description;
