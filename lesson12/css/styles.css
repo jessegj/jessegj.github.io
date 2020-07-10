@@ -450,24 +450,26 @@ html {
 
 /* body rules */
 body {
-  font-family: Verdana;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
+  font-weight: 400;
 }
 
 header {
-  background-color: #17a8e4;
-  padding: 1rem 2%;
+  background-color: #e4c517;
+  padding: 1rem 10%;
 }
 
 header h1 {
   margin: 0;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 header h2 {
   margin: 0;
   font-size: 1.2rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 nav {
@@ -502,11 +504,12 @@ nav a:hover {
 
 main {
   display: block;
-  padding: 1rem 2%;
+  padding: 1rem 10%;
 }
 
 main h1 {
-  color: #17a8e4;
+  color: #e4c517;
+  font-weight: 700;
 }
 
 main figure img {
@@ -524,9 +527,9 @@ main figcaption {
 }
 
 footer {
-  background-color: #17a8e4;
+  background-color: #e4c517;
   text-align: center;
-  padding: 1rem 2%;
+  padding: 1rem 10%;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -563,7 +566,7 @@ footer {
     margin: auto;
   }
   nav ul {
-    padding-left: 2%;
+    padding-left: 10%;
   }
   nav li {
     width: auto;
