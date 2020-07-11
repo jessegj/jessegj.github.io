@@ -64,3 +64,32 @@ function windChill() {
 
     document.getElementById('chill').innerHTML = chill.toFixed(0);
 }
+
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json"
+
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        const towns = jsonObject['towns'];
+        const townsName = towns.filter(towns => (towns.name == 'Preston'));
+        townsName.forEach(towns => {
+            let city = document.createElement('section');
+            let header = document.createElement('h4');
+
+            header.textContent = "Upcoming Events";
+            city.appendChild(header);
+
+            document.querySelector('div.event').appendChild(city);
+
+            let list = document.createElement('ul');
+            towns.events.forEach(event => {
+                let item = document.createElement('li');
+                item.textContent = event;
+                list.appendChild(item);
+            });
+            city.appendChild(list);
+
+        });
+    });

@@ -129,6 +129,26 @@ table {
 }
 
 
+
+section h4 {
+    background-color: olivedrab;
+    color: white;
+    font-size: 2rem;
+    
+}
+
+h4, ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.5rem;
+    margin: 1%;
+}
+
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 
 .clearfix:after {
