@@ -8,6 +8,7 @@ body header h1 {
     max-width: 0 auto;
     color: #ffffff;
     font-family: 'Architects Daughter', cursive;
+    font-size: 50pt;
 }
 
 header,
@@ -70,6 +71,9 @@ nav ul li a:hover {
 nav ul.hide {
     display: none;
 }
+ main div picture .sources {
+    
+ }
 
 
 
