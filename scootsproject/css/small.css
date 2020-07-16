@@ -71,10 +71,31 @@ nav ul li a:hover {
 nav ul.hide {
     display: none;
 }
- main div picture .sources {
-    
- }
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 10px;
+} 
 
+.cozumel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+picture .sources {
+    width: 100%;
+}
+.cozumelWeather {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #40e0d0;
+    border: 3px solid #464646;
+    padding: 15px;
+    opacity: .85;
+    font-size: 1rem;
+}
 
 
 
