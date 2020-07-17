@@ -30,6 +30,7 @@
         </ul>
     </nav>
     <main>
+        <div class="flex-container">
         <h2>Reserve your Spot</h2>
         <form method="get" action="submit.html">
         <fieldset>
@@ -43,7 +44,7 @@
         </fieldset>
         <fieldset>
             <legend>Rental Information</legend>
-            <label class="scoots">Start Date<input type="date" name="stardate"></label><label class="scoots">End Date<input type="date" name="enddate"></label>
+            <label class="scoots">Start Date<input type="date" name="stardate" required></label><label class="scoots">End Date<input type="date" name="enddate" required></label>
             <label class="scoots">Rental Type<input list="rentaltype">
                 <datalist id="rentaltype">
                     <select name="rental">
@@ -75,6 +76,7 @@
             <input type="submit" value="Submit" class="submitBtn">
         </fieldset>
         </form>
+        </div>
     </main>
 
     <footer>

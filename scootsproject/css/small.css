@@ -152,7 +152,6 @@ form label.scoots select {
     display: block;
     font-size: 16px;
     border: 1px solid black;
-    border-radius: 10px;
     padding: .75rem;
     width: 85%;
     background-color: lightgray;
@@ -175,6 +174,11 @@ form label.scoots input:required {
 
 form label.scoots input:required:valid {
     border-left: olivedrab solid 6px;
+}
+main div.flex-container form label.scoots
+input, label.scoots select {
+    display: flex;
+    
 }
 
 
