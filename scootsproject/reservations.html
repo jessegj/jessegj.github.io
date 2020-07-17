@@ -29,6 +29,53 @@
             <li><a href="">Contact</a></li>
         </ul>
     </nav>
+    <main>
+        <h2>Reserve your Spot</h2>
+        <form method="get" action="submit.html">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z].{5,}" required placeholder="Please enter your full name"></label>
+            <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+            <label class="top">Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
+            <label class="top">ZipCode*<input type="number" name="zipcode" required placeholder="00000"></label>
+            <label class="top">State or Country*<input type="text" name="home" required placeholder="example: New York or USA"></label>
+            <label class="top">Cruise Line<input type="text" name="cruise" placeholder="Princess Cuise Line"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Rental Information</legend>
+            <label class="top">Start Date<input type="date" name="stardate"></label><label class="top">End Date<input type="date" name="enddate"></label>
+            <label class="top">Rental Type<input list="rentaltype">
+                <datalist id="rentaltype">
+                    <select name="rental">
+                        <option>Select Rental Type</option>
+                        <option>Honda Metro Scooter</option>
+                        <option>Honda Dio Scooter</option>
+                        <option>Honda PCX150 Scooter</option>
+                        <option>Honda Pioneer ATV</option>
+                        <option>Jeep Wrangler - 4 Door with A/C</option>
+                        <option>Wrangler - 2 Door</option>
+                    </select>
+                </datalist>
+            </label>
+            <label class="top">Number of Guests<input list="number">
+                <datalist id="number">
+                    <select name="number">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                    </select>
+                </datalist>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Special Accommodations and Drop off requests</legend>
+            <textarea type="comments" id="comments" cols="40" rows="6"></textarea>
+            <input type="submit" value="Submit" class="submitBtn">
+        </fieldset>
+        </form>
+    </main>
 
     <footer>
         &copy 2020 | Jesse Jensen | Utah | <a href=""></a>

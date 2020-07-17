@@ -16,4 +16,22 @@
         border-right: 1px solid rgba(0, 0, 0, 0.3);
         padding: .8rem 1rem;
     }
+    table {
+        text-align: center;
+        border-collapse: collapse;
+    }
+    table tr th {
+        border: 1px solid;
+    }
+    table tr td {
+        border: 1px solid;
+    }
+    .forecast {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        border: 1px solid;
+        max-width: 600px;
+        border-collapse: collapse;
+    } 
 }
