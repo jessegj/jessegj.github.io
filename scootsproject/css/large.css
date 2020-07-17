@@ -19,5 +19,11 @@
         border: 1px solid;
         max-width: 600px;
         border-collapse: collapse;
-    } 
+    }
+    form label.scoots input, form label.scoots select {
+        max-width: 20rem;
+    }
+    form input.submitBtn {
+        max-width: 20rem;
+    }
 }

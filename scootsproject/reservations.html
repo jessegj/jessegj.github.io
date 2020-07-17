@@ -34,17 +34,17 @@
         <form method="get" action="submit.html">
         <fieldset>
             <legend>Personal Information</legend>
-            <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z].{5,}" required placeholder="Please enter your full name"></label>
-            <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-            <label class="top">Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
-            <label class="top">ZipCode*<input type="number" name="zipcode" required placeholder="00000"></label>
-            <label class="top">State or Country*<input type="text" name="home" required placeholder="example: New York or USA"></label>
-            <label class="top">Cruise Line<input type="text" name="cruise" placeholder="Princess Cuise Line"></label>
+            <label class="scoots">Full Name*<input type="text" name="fname" pattern="[A-Za-z].{5,}" required placeholder="Please enter your full name"></label>
+            <label class="scoots">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+            <label class="scoots">Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
+            <label class="scoots">ZipCode*<input type="number" name="zipcode" required placeholder="00000"></label>
+            <label class="scoots">State or Country*<input type="text" name="home" required placeholder="example: New York or USA"></label>
+            <label class="scoots">Cruise Line<input type="text" name="cruise" placeholder="Princess Cuise Line"></label>
         </fieldset>
         <fieldset>
             <legend>Rental Information</legend>
-            <label class="top">Start Date<input type="date" name="stardate"></label><label class="top">End Date<input type="date" name="enddate"></label>
-            <label class="top">Rental Type<input list="rentaltype">
+            <label class="scoots">Start Date<input type="date" name="stardate"></label><label class="scoots">End Date<input type="date" name="enddate"></label>
+            <label class="scoots">Rental Type<input list="rentaltype">
                 <datalist id="rentaltype">
                     <select name="rental">
                         <option>Select Rental Type</option>
@@ -57,7 +57,7 @@
                     </select>
                 </datalist>
             </label>
-            <label class="top">Number of Guests<input list="number">
+            <label class="scoots">Number of Guests<input list="number">
                 <datalist id="number">
                     <select name="number">
                         <option value="1"></option>

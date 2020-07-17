@@ -127,6 +127,56 @@ main p {
     border-collapse: collapse;
 }
 
+form fieldset {
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.scoots {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .8rem;
+}
+
+form label.scoots input,
+form label.scoots select {
+    display: block;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .75rem;
+    width: 85%;
+    background-color: lightgray;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #464646;
+    color: white;
+    border-radius: 1rem;
+    padding: .75 rem 1.5 rem;
+    margin: 0 0 2rem 2%;
+    width: 85%;
+    font-size: 44px;
+}
+
+form label.scoots input:required {
+    border-left: tomato solid 6px;
+}
+
+form label.scoots input:required:valid {
+    border-left: olivedrab solid 6px;
+}
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
