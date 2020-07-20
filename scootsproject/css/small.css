@@ -71,11 +71,12 @@ nav ul li a:hover {
 nav ul.hide {
     display: none;
 }
+
 main {
     margin: 0 auto;
     max-width: 1000px;
     padding: 10px;
-} 
+}
 
 .cozumel {
     position: relative;
@@ -86,6 +87,7 @@ main {
 picture .sources {
     width: 100%;
 }
+
 .cozumelWeather {
     position: absolute;
     top: 50px;
@@ -96,9 +98,11 @@ picture .sources {
     opacity: .85;
     font-size: 1rem;
 }
+
 section.cozumelWeather p {
     font-size: 16pt;
 }
+
 button {
     background-color: #ffd9aa;
     font-family: 'Maven Pro', sans-serif;
@@ -112,9 +116,11 @@ button {
     width: 100%;
     margin-top: 7px;
 }
+
 button:hover {
     background-color: #ffbe88;
 }
+
 main p {
     color: #464646;
     font-size: 30pt;
@@ -175,12 +181,11 @@ form label.scoots input:required {
 form label.scoots input:required:valid {
     border-left: olivedrab solid 6px;
 }
-main div.flex-container form label.scoots
-input, label.scoots select {
-    display: flex;
-    
-}
 
+main div.flex-container form label.scoots input,
+label.scoots select {
+    display: flex;
+}
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -190,4 +195,3 @@ input, label.scoots select {
     display: table;
     clear: both;
 }
-
