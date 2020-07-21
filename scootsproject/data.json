@@ -1,12 +1,12 @@
 {
-    "priceChart": [
-        {
+    "priceChart": [{
             "rentalType": "~Honda Metro Scooter",
             "maxPersons": 1,
             "resHalfDay": "$20",
             "resFullDay": "$30",
             "walkHalfDay": "$25",
             "walkFullDay": "$35"
+
         },
         {
             "rentalType": "~Honda Dio Scooter",
@@ -15,6 +15,7 @@
             "resFullDay": "$40",
             "walkHalfDay": "$35",
             "walkFullDay": "$45"
+
         },
         {
             "rentalType": "~Honda PCX150 Scooter",
