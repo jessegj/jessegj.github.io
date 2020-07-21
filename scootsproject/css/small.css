@@ -127,7 +127,6 @@ main p {
 }
 
 .forecast {
-    display: none;
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
@@ -186,21 +185,25 @@ main div.flex-container form label.scoots input,
 label.scoots select {
     display: flex;
 }
+
 section.contactInfo {
     display: block;
     text-align: right;
     padding: .5em;
     margin: 0 auto;
 }
+
 .map {
     display: block;
     margin: 0 auto;
     padding: 1em;
 }
+
 .contactInfo p {
     font-size: 16pt;
-
 }
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 
 .clearfix:after {

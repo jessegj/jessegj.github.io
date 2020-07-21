@@ -21,12 +21,6 @@ fetch(apiURL)
         humid.textContent = jsObject.main.humidity.toFixed(0);
         wind.textContent = jsObject.wind.speed.toFixed(0);
 
-        //const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-        //const desc = jsObject.weather[0].descritpion;
-
-        //icon.setAttribute('src', imagesrc);
-        //icon.setAttribute('alt', desc);
-
     });
 
 //forecast API
@@ -36,13 +30,12 @@ fetch(apiURLI)
     .then((response) => response.json())
     .then((jsObject) => {
 
-        const fiveDayForecast = jsObject.list.filter(x => x.dt_txt.includes('12 :00:00'));
+        const fiveDayForecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
 
         const weekdays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat'];
         let day = 0;
         fiveDayForecast.forEach(forecast => {
             let d = new Date(forecast.dt_txt);
-            //document.getElementById(`forecast${day+1}`).textContent = forecast.main.temp.toFixed(0);
             document.getElementById(`weekday${day+1}`).textContent = weekdays[d.getDay()];
             day++;
         });
