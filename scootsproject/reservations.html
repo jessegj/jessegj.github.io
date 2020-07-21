@@ -22,30 +22,30 @@
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li><a class="menu" href="">Home</a></li>
-            <li><a href="">Rentals</a></li>
-            <li><a href="">Reservations</a></li>
-            <li><a href="">Tours</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a class="menu" href="../scootsproject/home.html">Home</a></li>
+            <li><a href="../scootsproject/rentals.html">Rentals</a></li>
+            <li><a href="../scootsproject/reservations.html">Reservations</a></li>
+            <li><a href="../scootsproject/tours.html">Tours</a></li>
+            <li><a href="../scootsproject/contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
         <div class="flex-container">
-        <h2>Reserve your Spot</h2>
-        <form method="get" action="submit.html">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label class="scoots">Full Name*<input type="text" name="fname" pattern="[A-Za-z].{5,}" required placeholder="Please enter your full name"></label>
-            <label class="scoots">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-            <label class="scoots">Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
-            <label class="scoots">ZipCode*<input type="number" name="zipcode" required placeholder="00000"></label>
-            <label class="scoots">State or Country*<input type="text" name="home" required placeholder="example: New York or USA"></label>
-            <label class="scoots">Cruise Line<input type="text" name="cruise" placeholder="Princess Cuise Line"></label>
-        </fieldset>
-        <fieldset>
-            <legend>Rental Information</legend>
-            <label class="scoots">Start Date<input type="date" name="stardate" required></label><label class="scoots">End Date<input type="date" name="enddate" required></label>
-            <label class="scoots">Rental Type<input list="rentaltype">
+            <h2>Reserve your Spot</h2>
+            <form method="get" action="submit.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="scoots">Full Name*<input type="text" name="fname" pattern="[A-Za-z].{5,}" required placeholder="Please enter your full name"></label>
+                    <label class="scoots">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="scoots">Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                    <label class="scoots">ZipCode*<input type="number" name="zipcode" required placeholder="00000"></label>
+                    <label class="scoots">State or Country*<input type="text" name="home" required placeholder="example: New York or USA"></label>
+                    <label class="scoots">Cruise Line<input type="text" name="cruise" placeholder="Princess Cuise Line"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label class="scoots">Start Date<input type="date" name="stardate" required></label><label class="scoots">End Date<input type="date" name="enddate" required></label>
+                    <label class="scoots">Rental Type<input list="rentaltype">
                 <datalist id="rentaltype">
                     <select name="rental">
                         <option>Select Rental Type</option>
@@ -58,7 +58,7 @@
                     </select>
                 </datalist>
             </label>
-            <label class="scoots">Number of Guests<input list="number">
+                    <label class="scoots">Number of Guests<input list="number">
                 <datalist id="number">
                     <select name="number">
                         <option value="1"></option>
@@ -69,18 +69,19 @@
                     </select>
                 </datalist>
             </label>
-        </fieldset>
-        <fieldset>
-            <legend>Special Accommodations and Drop off requests</legend>
-            <textarea type="comments" id="comments" cols="40" rows="6"></textarea>
-            <input type="submit" value="Submit" class="submitBtn">
-        </fieldset>
-        </form>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Accommodations and Drop off requests</legend>
+                    <textarea type="comments" id="comments" cols="40" rows="6"></textarea>
+                    <input type="submit" value="Submit" class="submitBtn">
+                </fieldset>
+            </form>
         </div>
     </main>
 
     <footer>
-        &copy 2020 | Jesse Jensen | Utah | <a href=""></a>
+        &copy 2020 | Jesse Jensen | Utah |
+        <a href=""></a>
         Last Updated: <span id="lastTime"></span>
     </footer>
 
