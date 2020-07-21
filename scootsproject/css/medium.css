@@ -40,4 +40,13 @@
 form input.submitBtn {
     max-width: 50%;
     } 
+    section.contactInfo {
+        display: block;
+        text-align: center;
+        padding: .5em;
+        margin: 0 auto;
+    }
+    section.map {
+        justify-content: center;
+    }
 }

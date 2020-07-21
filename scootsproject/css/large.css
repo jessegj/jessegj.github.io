@@ -26,4 +26,8 @@
     form input.submitBtn {
         max-width: 20rem;
     }
+    .contactInfo {
+        float: right;
+        padding: 4em;
+    }
 }
