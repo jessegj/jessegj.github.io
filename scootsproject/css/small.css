@@ -203,6 +203,11 @@ section.contactInfo {
     font-size: 16pt;
 }
 
+main section.tour p{
+    font-size: 20pt;
+
+}
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 
