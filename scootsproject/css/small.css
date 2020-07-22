@@ -203,9 +203,16 @@ section.contactInfo {
     font-size: 16pt;
 }
 
+main section.tour {
+    border: 3pt solid #464646;
+}
 main section.tour p{
     font-size: 20pt;
+    margin: 15pt;
 
+}
+main h1{
+    text-align: center;
 }
 
 
