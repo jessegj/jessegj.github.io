@@ -11,27 +11,27 @@ fetch(requestURL)
 
         for (let i = 0; i < rental.length; i++) {
 
-            let table = document.createElement('section');
-            let rentalType = document.createElement('h2');
-            let maxPersons = document.createElement('p');
-            let resHalfDay = document.createElement('p');
-            let resFullDay = document.createElement('p');
-            let walkHalfDay = document.createElement('p');
-            let walkFullDay = document.createElement('p');
+            let section = document.createElement('table');
+            let rentalType = document.createElement('tr');
+            let maxPersons = document.createElement('td');
+            let resHalfDay = document.createElement('td');
+            let resFullDay = document.createElement('td');
+            let walkHalfDay = document.createElement('td');
+            let walkFullDay = document.createElement('td');
 
-            type.textContent = rental[i].rentalType;
+            rentalType.textContent = rental[i].rentalType;
             maxPersons.textContent = rental[i].maxPersons;
             resHalfDay.textContent = rental[i].resHalfDay;
             resFullDay.textContent = rental[i].resFullDay;
             walkHalfDay.textContent = rental[i].walkHalfDay;
             walkFullDay.textContent = rental[i].walkFullDay;
 
-            table.appendChild(rentalType);
-            table.appendChild(maxPersons)
-            table.appendChild(resHalfDay);
-            table.appendChild(resFullDay);
-            table.appendChild(walkHalfDay);
-            table.appendChild(walkFullDay);
+            section.appendChild(rentalType);
+            section.appendChild(maxPersons)
+            section.appendChild(resHalfDay);
+            section.appendChild(resFullDay);
+            section.appendChild(walkHalfDay);
+            section.appendChild(walkFullDay);
             document.querySelector('div.tableInfo').appendChild(section);
         }
 
