@@ -1,6 +1,11 @@
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
+//last modified
+let date = new Date(document.lastModified);
+let time = date.toLocaleString("en-US");
+
+document.getElementById("lastTime").textContent = time;
 
 //cozumel weather API
 const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3530103&APPID=ec1da9735ed79464d9674d9bfcb53a59&units=imperial';
