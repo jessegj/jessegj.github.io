@@ -215,6 +215,9 @@ main h1{
     text-align: center;
 }
 
+main h1 div.tableInfo table tr td{
+    border: solid 1px #464646;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 

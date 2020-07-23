@@ -11,14 +11,14 @@ fetch(requestURL)
 
         for (let i = 0; i < rental.length; i++) {
 
-            let section = document.createElement('table');
-            let rentalType = document.createElement('tr');
+            let table = document.createElement('tr');
+            let rentalType = document.createElement('td');
             let maxPersons = document.createElement('td');
-            let resHalfDay = document.createElement('td');
+            let resHalfDay = document.createElement('td')
             let resFullDay = document.createElement('td');
             let walkHalfDay = document.createElement('td');
             let walkFullDay = document.createElement('td');
-
+            
             rentalType.textContent = rental[i].rentalType;
             maxPersons.textContent = rental[i].maxPersons;
             resHalfDay.textContent = rental[i].resHalfDay;
@@ -26,13 +26,16 @@ fetch(requestURL)
             walkHalfDay.textContent = rental[i].walkHalfDay;
             walkFullDay.textContent = rental[i].walkFullDay;
 
-            section.appendChild(rentalType);
-            section.appendChild(maxPersons)
-            section.appendChild(resHalfDay);
-            section.appendChild(resFullDay);
-            section.appendChild(walkHalfDay);
-            section.appendChild(walkFullDay);
-            document.querySelector('div.tableInfo').appendChild(section);
+            table.appendChild(rentalType);
+            table.appendChild(maxPersons)
+            table.appendChild(resHalfDay);
+            table.appendChild(resFullDay);
+            table.appendChild(walkHalfDay);
+            table.appendChild(walkFullDay);
+
+            document.querySelector('div.tableInfo').appendChild(table);
+
+            
         }
 
     });

@@ -1,5 +1,9 @@
 {
-    "priceChart": [{
+    "priceChart": [
+        {
+            "header": "Max Persons and Price Chart(includes tax)"
+        },
+        {
             "rentalType": "~Honda Metro Scooter",
             "maxPersons": 1,
             "resHalfDay": "$20",
