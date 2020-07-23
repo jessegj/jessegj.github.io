@@ -221,7 +221,7 @@ main .tableInfo tr td, th{
     border-collapse: collapse;
     padding: 3px;
     font-size: 20pt;
-    
+    width: 100%;
 }
 
 main .tableInfo tr th {
