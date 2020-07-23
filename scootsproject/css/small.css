@@ -215,7 +215,7 @@ main h1{
     text-align: center;
 }
 
-main .tableInfo tr td, th{
+.tableInfo tr td, th{
 
     border: 1px solid #464646;
     border-collapse: collapse;
@@ -224,7 +224,7 @@ main .tableInfo tr td, th{
     width: 100%;
 }
 
-main .tableInfo tr th {
+.tableInfo tr th {
     background-color: #40e0d0;
 }
 
