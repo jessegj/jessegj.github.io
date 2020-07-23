@@ -215,8 +215,17 @@ main h1{
     text-align: center;
 }
 
-main h1 div.tableInfo table tr td{
-    border: solid 1px #464646;
+main .tableInfo tr td, th{
+
+    border: 1px solid #464646;
+    border-collapse: collapse;
+    padding: 3px;
+    font-size: 20pt;
+    
+}
+
+main .tableInfo tr th {
+    background-color: #40e0d0;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
